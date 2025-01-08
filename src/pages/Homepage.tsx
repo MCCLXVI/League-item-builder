@@ -11,20 +11,6 @@ const Homepage = () => {
     { id: 2, name: 'Garen', role: 'Fighter', imageUrl: '/GarenSquare.webp' },
     { id: 3, name: 'Yasuo', role: 'Marksman', imageUrl: '/YasuoSquare.webp' },
     { id: 4, name: 'Lux', role: 'Mage', imageUrl: '/LuxSquare.webp' },
-    { id: 5, name: 'Ahri', role: 'Mage', imageUrl: '/Ahri_OriginalSquare.webp' },
-    { id: 6, name: 'Garen', role: 'Fighter', imageUrl: '/GarenSquare.webp' },
-    { id: 7, name: 'Yasuo', role: 'Marksman', imageUrl: '/YasuoSquare.webp' },
-    { id: 8, name: 'Lux', role: 'Mage', imageUrl: '/LuxSquare.webp' },    { id: 1, name: 'Ahri', role: 'Mage', imageUrl: '/Ahri_OriginalSquare.webp' },
-    { id: 9, name: 'Garen', role: 'Fighter', imageUrl: '/GarenSquare.webp' },
-    { id: 10, name: 'Yasuo', role: 'Marksman', imageUrl: '/YasuoSquare.webp' },
-    { id: 11, name: 'Lux', role: 'Mage', imageUrl: '/LuxSquare.webp' },    { id: 1, name: 'Ahri', role: 'Mage', imageUrl: '/Ahri_OriginalSquare.webp' },
-    { id: 12, name: 'Garen', role: 'Fighter', imageUrl: '/GarenSquare.webp' },
-    { id: 13, name: 'Yasuo', role: 'Marksman', imageUrl: '/YasuoSquare.webp' },
-    { id: 14, name: 'Lux', role: 'Mage', imageUrl: '/LuxSquare.webp' },
-    { id: 11, name: 'Lux', role: 'Mage', imageUrl: '/LuxSquare.webp' },    { id: 1, name: 'Ahri', role: 'Mage', imageUrl: '/Ahri_OriginalSquare.webp' },
-    { id: 12, name: 'Garen', role: 'Fighter', imageUrl: '/GarenSquare.webp' },
-    { id: 13, name: 'Yasuo', role: 'Marksman', imageUrl: '/YasuoSquare.webp' },
-    { id: 14, name: 'Lux', role: 'Mage', imageUrl: '/LuxSquare.webp' },
 
     // Add the champs here milo
   ];
