@@ -7,11 +7,10 @@ const Homepage = () => {
   const [roleFilter, setRoleFilter] = useState('All');
 
   const champions = [
-    { id: 1, name: 'Ahri', role: 'Mage', imageUrl: '/Ahri_OriginalSquare.webp' },
-    { id: 2, name: 'Garen', role: 'Fighter', imageUrl: '/GarenSquare.webp' },
-    { id: 3, name: 'Yasuo', role: 'Marksman', imageUrl: '/YasuoSquare.webp' },
-    { id: 4, name: 'Lux', role: 'Mage', imageUrl: '/LuxSquare.webp' },
-
+    { id: 1, name: 'Ahri', role: 'Mage', imageUrl: '/Ahri_OriginalSquare.png', roleIconUrl: 'logo192.png' },
+    { id: 2, name: 'Garen', role: 'Fighter', imageUrl: '/GarenSquare.png', roleIconUrl: 'png' },
+    { id: 3, name: 'Yasuo', role: 'Assassin', imageUrl: '/YasuoSquare.png', roleIconUrl: '.png' },
+    { id: 4, name: 'Lux', role: 'Mage', imageUrl: '/LuxSquare.png', roleIconUrl: '.png' },
     // Add the champs here milo
   ];
 
@@ -46,6 +45,7 @@ const Homepage = () => {
           <option value="Mage">Mage</option>
           <option value="Fighter">Fighter</option>
           <option value="Marksman">Marksman</option>
+          <option value="Assassin">Assassin</option>
           {/* Add better roles plz milo as i just chucked them in xD */}
         </select>
       </div>
@@ -56,7 +56,14 @@ const Homepage = () => {
             <div key={champion.id} className="champion-card">
               <img className="champion-image" src={champion.imageUrl} alt={champion.name} />
               <h3 className="champion-name">{champion.name}</h3>
-              <p className="champion-role">{champion.role}</p>
+              <div className="champion-info">
+                <p className="champion-role">{champion.role}</p>
+                <img
+                  className="role-icon"
+                  src={champion.roleIconUrl}
+                  alt={`${champion.name} role icon`}
+                />
+              </div>
             </div>
           ))
         ) : (
