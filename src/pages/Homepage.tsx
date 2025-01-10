@@ -42,10 +42,11 @@ const Homepage = () => {
           onChange={(e) => setRoleFilter(e.target.value)}
         >
           <option value="All">All Roles</option>
-          <option value="Mage">Mage</option>
-          <option value="Fighter">Fighter</option>
-          <option value="Marksman">Marksman</option>
           <option value="Assassin">Assassin</option>
+          <option value="Fighter">Fighter</option>
+          <option value="Mage">Mage</option>
+          <option value="Marksman">Marksman</option>
+          
           {/* Add better roles plz milo as i just chucked them in xD */}
         </select>
       </div>
