@@ -8,15 +8,17 @@ const Homepage = () => {
 
   const champions = [
     { id: 1, name: 'Aatrox', role: 'Fighter', lane: 'Top', imageUrl: '/Icons/aatrox.jpg'},
-    { id: 2, name: 'Ahri', role: 'Mage', lane: 'Mid', imageUrl: '/PNG%20images/Ahri.png'},
-    { id: 3, name: 'Akali', role: 'Assassin', lane: 'Mid', imageUrl: '/PNG%20images/Akali.png'},
-    { id: 4, name: 'Akshan', role: 'Marksman', lane: 'Mid', imageUrl: '/PNG%20images/Akshan.png'},
-    { id: 5, name: 'Alistar', role: 'Tank', lane: 'Sup', imageUrl: '/PNG%20images/Alistar.png' },
-    { id: 6, name: 'Amumu', role: 'Tank', lane: 'Jungle', imageUrl: '/PNG%20images/Amumu.png'},
-    { id: 7, name: 'Annie', role: 'Mage', lane: 'Mid', imageUrl: '/PNG%20images/Amumu.png'},
-    { id: 200, name: 'Garen', role: 'Fighter', lane: 'Top', imageUrl: '/PNG%20images/Garen.png',},
-    { id: 1000, name: 'Yasuo', role: 'Assassin', lane: 'Mid', imageUrl: '/PNG%20images/Yasuo.png',},
-    { id: 100000, name: 'Lux', role: 'Mage', lane: 'Mid', imageUrl: '/PNG%20images//Lux.png',},
+    { id: 2, name: 'Ahri', role: 'Mage', lane: 'Mid', imageUrl: '/Icons/ahri.jpg'},
+    { id: 3, name: 'Akali', role: 'Assassin', lane: 'Mid', imageUrl: '/Icons/akali.jpg'},
+    { id: 4, name: 'Akshan', role: 'Marksman', lane: 'Mid', imageUrl: '/Icons/akshan.jpg'},
+    { id: 5, name: 'Alistar', role: 'Tank', lane: 'Sup', imageUrl: '/Icons/alistar.jpg' },
+    { id: 6, name: 'Ambessa', role: 'Fighter', lane: 'Top', imageUrl: '/Icons/ambessa.jpg'},
+    { id: 7, name: 'Amumu', role: 'Tank', lane: 'Jungle', imageUrl: '/Icons/amumu.jpg'},
+    { id: 8, name: 'Anivia', role: 'Mage', lane: 'Mid', imageUrl: '/Icons/anivia.jpg'},
+    { id: 9, name: 'Annie', role: 'Mage', lane: 'Mid', imageUrl: '/Icons/annie.jpg'},
+    { id: 200, name: 'Garen', role: 'Fighter', lane: 'Top', imageUrl: '/Icons/garen.jpg',},
+    { id: 1000, name: 'Yasuo', role: 'Assassin', lane: 'Mid', imageUrl: '/Icons/yasuo.jpg',},
+    { id: 100000, name: 'Lux', role: 'Mage', lane: 'Mid', imageUrl: '/Icons/lux.jpg',},
     // Add more milo
   ];
 
