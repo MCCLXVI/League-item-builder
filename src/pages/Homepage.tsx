@@ -1,24 +1,31 @@
-// Homepage.tsx
 import React, { useState } from 'react';
 import '../styles/Homepage.css';
 
 const Homepage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [roleFilter, setRoleFilter] = useState('All');
+  const [classFilter, setClassFilter] = useState('All'); // Added this line to handle lane filter
 
   const champions = [
-    { id: 1, name: 'Ahri', role: 'Mage', imageUrl: '/Ahri_OriginalSquare.png', roleIconUrl: 'logo192.png' },
-    { id: 2, name: 'Garen', role: 'Fighter', imageUrl: '/GarenSquare.png', roleIconUrl: 'logo192.png' },
-    { id: 3, name: 'Yasuo', role: 'Assassin', imageUrl: '/YasuoSquare.png', roleIconUrl: '.png' },
-    { id: 4, name: 'Lux', role: 'Mage', imageUrl: '/LuxSquare.png', roleIconUrl: '.png' },
-    // Add the champs here milo
+    { id: 1, name: 'Aatrox', role: 'Fighter', lane: 'Top', imageUrl: '/PNG%20images/Aatrox.png'},
+    { id: 2, name: 'Ahri', role: 'Mage', lane: 'Mid', imageUrl: '/PNG%20images/Ahri.png'},
+    { id: 3, name: 'Akali', role: 'Assassin', lane: 'Mid', imageUrl: '/PNG%20images/Akali.png'},
+    { id: 4, name: 'Akshan', role: 'Marksman', lane: 'Mid', imageUrl: '/PNG%20images/Akshan.png'},
+    { id: 5, name: 'Alistar', role: 'Tank', lane: 'Sup', imageUrl: '/PNG%20images/Alistar.png' },
+    { id: 6, name: 'Amumu', role: 'Tank', lane: 'Jungle', imageUrl: '/PNG%20images/Amumu.png'},
+    { id: 7, name: 'Annie', role: 'Mage', lane: 'Mid', imageUrl: '/PNG%20images/Amumu.png'},
+    { id: 200, name: 'Garen', role: 'Fighter', lane: 'Top', imageUrl: '/PNG%20images/Garen.png',},
+    { id: 1000, name: 'Yasuo', role: 'Assassin', lane: 'Mid', imageUrl: '/PNG%20images/Yasuo.png',},
+    { id: 100000, name: 'Lux', role: 'Mage', lane: 'Mid', imageUrl: '/PNG%20images//Lux.png',},
+    // Add more milo
   ];
 
-  // This is where it filters the champions based on search term and role
+  // This is where it filters the champions based on search term, role, and lane
   const filteredChampions = champions.filter(
     (champion) =>
       champion.name.toLowerCase().includes(searchTerm.toLowerCase()) &&
-      (roleFilter === 'All' || champion.role === roleFilter)
+      (roleFilter === 'All' || champion.role === roleFilter) &&
+      (classFilter === 'All' || champion.lane === classFilter) // Add the lane filter
   );
 
   return (
@@ -46,26 +53,23 @@ const Homepage = () => {
           <option value="Fighter">Fighter</option>
           <option value="Mage">Mage</option>
           <option value="Marksman">Marksman</option>
-          
-          {/* Add better roles plz milo as i just chucked them in xD */}
+          <option value="Tank">Tank</option>
+          {/* Add more roles as necessary milo */}
         </select>
 
         <select
-          className="role-filter"
-          value={roleFilter}
-          onChange={(e) => setRoleFilter(e.target.value)}
+          className="class-filter"
+          value={classFilter}
+          onChange={(e) => setClassFilter(e.target.value)}
         >
-          <option value="All">Positions</option>
+          <option value="All">All Lanes</option>
           <option value="Top">Top</option>
           <option value="Jungle">Jungle</option>
           <option value="Mid">Mid</option>
           <option value="Bot">Bot</option>
           <option value="Sup">Sup</option>
-          
-          {/**/}
+           {/* */}
         </select>
-
-
       </div>
 
       <div className="champion-grid">
@@ -76,11 +80,9 @@ const Homepage = () => {
               <h3 className="champion-name">{champion.name}</h3>
               <div className="champion-info">
                 <p className="champion-role">{champion.role}</p>
-                <img
-                  className="role-icon"
-                  src={champion.roleIconUrl}
-                  alt={`${champion.name} role icon`}
-                />
+                <p className="champion-lane">{champion.lane}</p> {/**/}
+              </div>
+              <div className="role-icon-container">
               </div>
             </div>
           ))

@@ -100,22 +100,45 @@ h1, h3, p {
 }
 
 .champion-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 15px;
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  gap: 5px; 
+  width: 100%; 
+}
+
+.champion-name {
+  font-size: 1.5rem; 
+  font-weight: bold; 
+  color: #ffffff; 
+  margin-bottom: 0; 
+  text-align: center; 
+  font-family: serif;
 }
 
 .champion-role {
-  font-size: 1rem;
-  color: #ffffff;
+  font-size: 1.2rem; 
+  color: #ffffff; 
+  font-weight: 600; 
+  text-transform: capitalize;
+  margin-bottom: 0; 
+  text-align: center; 
+  font-family: serif;
 }
 
-.role-icon {
-  right: 80px;
-  width: 20px;
-  height: 20px;
+.champion-lane {
+  font-size: 1rem; 
+  color: #dcdcdc; 
+  font-weight: 600; 
+  text-transform: capitalize;
+  text-align: center; 
+  margin-top: 0; 
+}
+.class-filter{
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
 }
 
 .no-results {
