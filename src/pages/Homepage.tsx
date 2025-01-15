@@ -8,7 +8,7 @@ const Homepage = () => {
 
   const champions = [
     { id: 1, name: 'Ahri', role: 'Mage', imageUrl: '/Ahri_OriginalSquare.png', roleIconUrl: 'logo192.png' },
-    { id: 2, name: 'Garen', role: 'Fighter', imageUrl: '/GarenSquare.png', roleIconUrl: 'png' },
+    { id: 2, name: 'Garen', role: 'Fighter', imageUrl: '/GarenSquare.png', roleIconUrl: 'logo192.png' },
     { id: 3, name: 'Yasuo', role: 'Assassin', imageUrl: '/YasuoSquare.png', roleIconUrl: '.png' },
     { id: 4, name: 'Lux', role: 'Mage', imageUrl: '/LuxSquare.png', roleIconUrl: '.png' },
     // Add the champs here milo
@@ -49,6 +49,23 @@ const Homepage = () => {
           
           {/* Add better roles plz milo as i just chucked them in xD */}
         </select>
+
+        <select
+          className="role-filter"
+          value={roleFilter}
+          onChange={(e) => setRoleFilter(e.target.value)}
+        >
+          <option value="All">Positions</option>
+          <option value="Top">Top</option>
+          <option value="Jungle">Jungle</option>
+          <option value="Mid">Mid</option>
+          <option value="Bot">Bot</option>
+          <option value="Sup">Sup</option>
+          
+          {/**/}
+        </select>
+
+
       </div>
 
       <div className="champion-grid">
