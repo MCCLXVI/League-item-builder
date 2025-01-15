@@ -7,7 +7,7 @@ const Homepage = () => {
   const [classFilter, setClassFilter] = useState('All'); // Added this line to handle lane filter
 
   const champions = [
-    { id: 1, name: 'Aatrox', role: 'Fighter', lane: 'Top', imageUrl: '/PNG%20images/Aatrox.png'},
+    { id: 1, name: 'Aatrox', role: 'Fighter', lane: 'Top', imageUrl: '/Icons/aatrox.jpg'},
     { id: 2, name: 'Ahri', role: 'Mage', lane: 'Mid', imageUrl: '/PNG%20images/Ahri.png'},
     { id: 3, name: 'Akali', role: 'Assassin', lane: 'Mid', imageUrl: '/PNG%20images/Akali.png'},
     { id: 4, name: 'Akshan', role: 'Marksman', lane: 'Mid', imageUrl: '/PNG%20images/Akshan.png'},
