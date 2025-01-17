@@ -34,7 +34,7 @@ const Homepage = () => {
     <div className="homepage">
       <header className="header">
         <h1 className="title">LeagueBuild</h1>
-        <p className="subtitle">Create and share builds for your favorite champions.</p>
+        <p className="subtitle">Create and builds for your favorite champions.</p>
       </header>
 
       <div className="filters">
