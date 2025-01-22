@@ -1,0 +1,116 @@
+/* General Styles (same as Homepage) */
+.buildspage {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #fff;
+    padding: 30px;
+  }
+  
+  .build-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .build-header h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+  }
+  
+  .build-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Champion Info */
+  .champion-info {
+    text-align: center;
+  }
+  
+  .champion-profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .champion-info h2 {
+    font-size: 2rem;
+    color: #ffffff;
+  }
+  
+  /* Form Elements */
+  .build-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  label {
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #2b2b38;
+    color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  select:focus {
+    border-color: #ff6347;
+  }
+  
+  .selected-items, .selected-runes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .item-badge, .rune-badge {
+    background-color: #444;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  button {
+    background: none;
+    color: #817a79;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .create-build-btn {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .create-build-btn button {
+    padding: 10px 20px;
+    background-color: #817a79;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .create-build-btn button:hover {
+    background-color: #ff4500;
+  }
+  

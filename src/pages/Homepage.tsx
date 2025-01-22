@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Add Link import
 import '../styles/Homepage.css';
 
 const Homepage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [roleFilter, setRoleFilter] = useState('All');
-  const [classFilter, setClassFilter] = useState('All'); // Added this line to handle lane filter
+  const [classFilter, setClassFilter] = useState('All');
 
-  // This is where it filters the champions based on search term, role, and lane milo
   const filteredChampions = champions.filter(
     (champion) =>
       champion.name.toLowerCase().includes(searchTerm.toLowerCase()) &&
       (roleFilter === 'All' || champion.role === roleFilter) &&
-      (classFilter === 'All' || champion.lane === classFilter) // Add the lane filter
+      (classFilter === 'All' || champion.lane === classFilter)
   );
 
   return (
@@ -40,7 +40,6 @@ const Homepage = () => {
           <option value="Mage">Mage</option>
           <option value="Marksman">Marksman</option>
           <option value="Tank">Tank</option>
-          {/* Add more roles as necessary milo */}
         </select>
 
         <select
@@ -54,23 +53,20 @@ const Homepage = () => {
           <option value="Mid">Mid</option>
           <option value="Bot">Bot</option>
           <option value="Sup">Sup</option>
-           {/* */}
         </select>
       </div>
 
       <div className="champion-grid">
         {filteredChampions.length > 0 ? (
           filteredChampions.map((champion) => (
-            <div key={champion.id} className="champion-card">
+            <Link key={champion.id} to={`/build/${champion.id}`} className="champion-card">
               <img className="champion-image" src={champion.imageUrl} alt={champion.name} />
               <h3 className="champion-name">{champion.name}</h3>
               <div className="champion-info">
                 <p className="champion-role">{champion.role}</p>
-                <p className="champion-lane">{champion.lane}</p> {/**/}
+                <p className="champion-lane">{champion.lane}</p>
               </div>
-              <div className="role-icon-container">
-              </div>
-            </div>
+            </Link>
           ))
         ) : (
           <p className="no-results">No champions found!</p>
@@ -79,7 +75,6 @@ const Homepage = () => {
     </div>
   );
 };
-
 const champions = [
   { id: 1, name: 'Aatrox', role: 'Fighter', lane: 'Top', imageUrl: '/Icons/aatrox.jpg'},
   { id: 2, name: 'Ahri', role: 'Mage', lane: 'Mid', imageUrl: '/Icons/ahri.jpg'},
